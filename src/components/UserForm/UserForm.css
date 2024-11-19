@@ -1,0 +1,52 @@
+.modal__form-container {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.modal__form {
+  width: 90vw;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid black;
+  border-radius: 10px;
+
+  padding: 0 10px 20px;
+
+  background-color: grey;
+}
+
+.modal__label {
+  margin: 20px 0 0 0;
+
+  display: flex;
+  gap: 0 10px;
+  align-items: center;
+}
+
+.modal__input {
+}
+
+.modal__dropdown {
+}
+
+.modal__option {
+}
+
+.modal__add-profession {
+}
+
+.modal__professions {
+}
+
+.modal__profession {
+}
+
+.modal__button-submit {
+  margin: 10px 0 0 0;
+}

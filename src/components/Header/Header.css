@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 0 10px 0;
+}
+
+.header__title {
+  margin: 0;
+}
+
+.header__user_switch {
+  background-color: black;
+  color: white;
+
+  border-radius: 10px;
+}
