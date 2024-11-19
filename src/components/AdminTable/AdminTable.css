@@ -4,9 +4,8 @@
 }
 
 .admin__actions {
-  height: 50px;
   margin: 10px 0;
-  padding: 0 10px;
+  padding: 10px;
 
   display: flex;
   align-items: center;
@@ -74,7 +73,10 @@
 .admin__user-profession {
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
+  .admin__actions {
+    flex-direction: column;
+  }
   .admin__user-data {
     overflow-x: scroll;
   }

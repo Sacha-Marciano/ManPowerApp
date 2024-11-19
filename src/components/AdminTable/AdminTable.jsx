@@ -28,39 +28,47 @@ function AdminTable({ professionList, users, onProfessionAdd }) {
   return (
     <section className="admin">
       <div className="admin__actions">
-        <select
-          className="admin__dropdown"
-          onChange={handleSearchChange}
-          value={searchQuery}
-        >
-          {professionList.map((item) => {
-            return (
-              <option
-                key={Math.random()}
-                className="admin__option"
-                value={item}
-              >
-                {item}
-              </option>
-            );
-          })}
-        </select>
-        <button className="admin__search" type="button" onClick={handleSearch}>
-          Search
-        </button>
-        <input
-          className="admin__add-profession"
-          type="text"
-          value={profession}
-          onChange={handleAddChange}
-        />
-        <button
-          className="admin__button-add"
-          type="button"
-          onClick={handleAddProfession}
-        >
-          Add job
-        </button>
+        <div className="admin__action">
+          <select
+            className="admin__dropdown"
+            onChange={handleSearchChange}
+            value={searchQuery}
+          >
+            {professionList.map((item) => {
+              return (
+                <option
+                  key={Math.random()}
+                  className="admin__option"
+                  value={item}
+                >
+                  {item}
+                </option>
+              );
+            })}
+          </select>
+          <button
+            className="admin__search"
+            type="button"
+            onClick={handleSearch}
+          >
+            Search
+          </button>
+        </div>
+        <div className="admin__action">
+          <input
+            className="admin__add-profession"
+            type="text"
+            value={profession}
+            onChange={handleAddChange}
+          />
+          <button
+            className="admin__button-add"
+            type="button"
+            onClick={handleAddProfession}
+          >
+            Add job
+          </button>
+        </div>
       </div>
       <div className="admin__table">
         {display.map((user) => {
