@@ -3,7 +3,7 @@ import "./Main.css";
 import UserForm from "../UserForm/UserForm";
 import AdminTable from "../AdminTable/AdminTable";
 
-function Main({ isAdmin, professionList, users, onSubmit }) {
+function Main({ isAdmin, professionList, users, onSubmit, onProfessionAdd }) {
   return (
     <main className="main">
       {!isAdmin ? (
@@ -22,7 +22,11 @@ function Main({ isAdmin, professionList, users, onSubmit }) {
         </section>
       ) : (
         <section className="main__admin-section">
-          <AdminTable professionList={professionList} users={users} />
+          <AdminTable
+            professionList={professionList}
+            users={users}
+            onProfessionAdd={onProfessionAdd}
+          />
         </section>
       )}
     </main>

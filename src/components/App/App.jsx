@@ -56,6 +56,10 @@ function App() {
     setUsers([...users, data]);
   };
 
+  const handleProfessionAdd = (data) => {
+    setProfessionList([...professionList, data]);
+  };
+
   return (
     <div className="page">
       <Header isAdmin={isAdmin} toggleAdmin={toggleAdmin} />
@@ -64,6 +68,7 @@ function App() {
         professionList={professionList}
         users={users}
         onSubmit={handleUserSubmit}
+        onProfessionAdd={handleProfessionAdd}
       />
     </div>
   );

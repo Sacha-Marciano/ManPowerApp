@@ -38,6 +38,16 @@
   border-radius: 5px;
 }
 
+.admin__add-profession {
+  background-color: black;
+  color: white;
+}
+
+.admin__button-add {
+  background-color: black;
+  color: white;
+}
+
 .admin__table {
   display: grid;
   grid-template-columns: repeat(2, calc((100% / 2) - 10px));
@@ -53,8 +63,6 @@
   border-radius: 10px;
 
   background-color: black;
-
-  overflow-x: scroll;
 }
 
 .admin__user-info {
@@ -64,4 +72,10 @@
 }
 
 .admin__user-profession {
+}
+
+@media screen and (max-width: 650px) {
+  .admin__user-data {
+    overflow-x: scroll;
+  }
 }
